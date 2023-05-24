@@ -56,3 +56,13 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 - [ ] Symlink dotfiles from git repository
 - [ ] Dynamic theme switch of neovim
 - [ ] Multiple colorscheme options
+
+## Naming Ideas
+
+I have some names in mind for this ArchLinux spin:
+
+- KittyOS;
+- ArchKitty;
+- HyprKitty;
+
+Yes, I love cats 😺.
