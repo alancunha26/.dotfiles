@@ -73,6 +73,7 @@ install_stage=(
     sddm-git 
     sddm-sugar-candy-git
     neovim
+    tmux
 )
 
 for str in ${myArray[@]}; do
@@ -307,6 +308,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
     echo -e "$CNT - Setting up the new config..." 
     cp ~/.config/HyprV/hypr/* ~/.config/hypr/
     ln -s ~/.config/HyprV/nvim ~/.config/nvim
+    ln -sf ~/.config/HyprV/tmux.conf ~/.config/tmux.conf
     ln -sf ~/.config/HyprV/kitty/kitty.conf ~/.config/kitty/kitty.conf
     ln -sf ~/.config/HyprV/mako/conf/config-dark ~/.config/mako/config
     ln -sf ~/.config/HyprV/swaylock/config ~/.config/swaylock/config
@@ -387,6 +389,11 @@ if [[ $ROG == "Y" || $ROG == "y" ]]; then
     # add the ROG keybinding file to the config
     echo -e "\nsource = ~/.config/hypr/rog-g15-strix-2021-binds.conf" >> ~/.config/hypr/hyprland.conf
 fi
+
+### Install tmux-plugin-manager from repo
+echo -e "$CNT - Installing Tmux plugins manager..."
+git clone https://github.com/tmux-plugins/tpm
+~/.tmux/plugins/tpm
 
 ### Script is done ###
 echo -e "$CNT - Script had completed!"
