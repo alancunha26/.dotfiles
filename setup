@@ -393,8 +393,7 @@ fi
 
 ### Install tmux-plugin-manager from repo
 echo -e "$CNT - Installing Tmux plugins manager..."
-git clone https://github.com/tmux-plugins/tpm
-~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 ### Script is done ###
 echo -e "$CNT - Script had completed!"
