@@ -309,7 +309,7 @@ if [[ $CFG == "Y" || $CFG == "y" ]]; then
     echo -e "$CNT - Setting up the new config..." 
     cp ~/.config/HyprV/hypr/* ~/.config/hypr/
     ln -s ~/.config/HyprV/nvim ~/.config/nvim
-    ln -sf ~/.config/HyprV/tmux.conf ~/.config/tmux.conf
+    ln -s ~/.config/HyprV/tmux ~/.config/tmux
     ln -sf ~/.config/HyprV/kitty/kitty.conf ~/.config/kitty/kitty.conf
     ln -sf ~/.config/HyprV/mako/conf/config-dark ~/.config/mako/config
     ln -sf ~/.config/HyprV/swaylock/config ~/.config/swaylock/config
@@ -394,6 +394,23 @@ fi
 ### Install tmux-plugin-manager from repo
 echo -e "$CNT - Installing Tmux plugins manager..."
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+
+### Install asdf
+echo -e "$CNT - Installing ASDF..."
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.3
+echo -e '\n. "$HOME/.asdf/asdf.sh"' >> ~/.bashrc
+echo -e '\n. "$HOME/.asdf/completions/asdf.bash"' >> ~/.bashrc
+
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
+sleep 2
+
+### Install NodeJS latest release
+echo -e "$CNT - Installing NodeJS lastest release..."
+asdf install nodejs latest
+asdf global nodejs latest
 
 ### Script is done ###
 echo -e "$CNT - Script had completed!"

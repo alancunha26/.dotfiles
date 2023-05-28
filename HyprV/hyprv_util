@@ -131,12 +131,13 @@ fi
 get_ver
 
 TOOLTIP='Default Keybinds\n'\
-'SUPER + Q = Start Kitty\n'\
-'SUPER + F4 = Close Window\n'\
-'SUPER + L = Lock Screen\n'\
-'SUPER + M = Logout menu\n'\
-'SUPER + E = File Manager\n'\
-'SUPER + V = Toggle Float\n'\
+'SUPER + ENTER = Start Kitty\n'\
+'SUPER + Q = Close Window\n'\
+'SUPER + E = Lock Screen\n'\
+'SUPER SHIFT + E = Logout menu\n'\
+'SUPER SHIFT + Q = Quit hyprland\n'\
+'SUPER + F = File Manager\n'\
+'SUPER + I = Toggle Float\n'\
 'SUPER + SPACE = App Launcher\n'\
 'SUPER + S = Screenshot\n'\
 'SUPER + T = Switch HyprV version\n'\
