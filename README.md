@@ -53,6 +53,7 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 ## TODO
 
 - [ ] Guide on installing minimal ArchLinux
+- [ ] Change wofi for another launcher (probably rofi)
 - [ ] Symlink dotfiles from git repository
 - [ ] Dynamic theme switch of neovim
 - [ ] Multiple colorscheme options

@@ -52,7 +52,6 @@ install_stage=(
     btop
     firefox
     thunderbird
-    mpv
     pamixer 
     pavucontrol 
     brightnessctl 
@@ -75,6 +74,25 @@ install_stage=(
     flatpak
     neovim
     tmux
+)
+
+#install my personal tech stack apps with AUR
+install_personal_apps_aur_stage=(
+    libreoffice-still
+    "1password"
+    obs-studio
+    audacity
+    discord
+    gimp
+    vlc
+)
+
+#install my personal tech stack apps with flatpak
+install_personal_apps_flatpak_stage=(
+    libresprite
+    unityhub
+    obsidian
+    zotero
 )
 
 for str in ${myArray[@]}; do
@@ -254,6 +272,18 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     for SOFTWR in ${install_stage[@]}; do
         install_software $SOFTWR 
     done
+
+    # Stage 2 - optional components
+    read -rep $'[\e[1;33mACTION\e[0m] - Would you like to install my personal apps? (y,n) ' OPTP
+    if [[ $OPTP == "Y" || $OPTP == "y" ]]; then
+        echo -e "$CNT - Installing my personal apps, this may take a while..."
+        for SOFTWR in ${install_personal_apps_aur_stage[@]}; do
+            install_software $SOFTWR 
+        done
+        for SOFTWR in ${install_personal_apps_flatpak_stage[@]}; do
+            flatpak install flathub $SOFTWR 
+        done
+    fi
 
     # Start the bluetooth service
     echo -e "$CNT - Starting the Bluetooth Service..."
