@@ -47,7 +47,7 @@ wofi wlogout xdg-desktop-portal-hyprland swappy grim slurp thunar \
 polkit-gnome python-requests pamixer pavucontrol brightnessctl bluez \
 bluez-utils blueman network-manager-applet gvfs thunar-archive-plugin \
 file-roller btop pacman-contrib starship ttf-jetbrains-mono-nerd \
-noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git 
+noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 ```
 
 ## TODO
@@ -57,6 +57,7 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 - [ ] Symlink dotfiles from git repository
 - [ ] Dynamic theme switch of neovim
 - [ ] Multiple colorscheme options
+- [ ] Add GTK4 configuration and themes
 
 ## Naming Ideas
 
