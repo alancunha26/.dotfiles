@@ -58,6 +58,8 @@ noto-fonts-emoji lxappearance xfce4-settings sddm-git sddm-sugar-candy-git
 - [ ] Dynamic theme switch of neovim
 - [ ] Multiple colorscheme options
 - [ ] Add GTK4 configuration and themes
+- [ ] Change nvim theme for a better one
+- [ ] Add tree-sitter to nvim
 
 ## Naming Ideas
 
