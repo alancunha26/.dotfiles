@@ -78,6 +78,7 @@ install_stage=(
 
 #install my personal tech stack apps with AUR
 install_personal_apps_aur_stage=(
+    protonmail-bridge-nokeychain
     libreoffice-still
     "1password"
     obs-studio
